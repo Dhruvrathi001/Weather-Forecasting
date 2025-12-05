@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="card container">
+            <div class="search search-container">
+                <input id="searchCity" type="text" placeholder="search your city...." spellcheck="false">
+                <button class="btn search-btn"><img src="icon\search.webp" alt="search image for button"></button>
+            </div>
+
+
+            <div class="weather weather-container">
+                <img class="weather-icon image" src="icon\weather.webp" alt="weather-icon">
+                <h1 class="temp">°C</h1>
+                <div class="sub-temp">
+                    <p class="feels-like">Feels Like: °C</p>
+                    <p class="max-temp">Max Temp: °C</p>
+                    <p class="min-temp">Min Temp: °C</p>
+                </div>
+                <h2 class="city">City Name</h2>
+                <div class="details">
+                    <div class="col">
+                        <img id="humidity-img" src="icon\humidity.webp" alt="Humidity Meter">
+                        <div class="image-units">
+                            <p class="reading humidity">%</p>
+                            <p class="reading-title">Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img id="wind-img" src="icon\wind.webp" alt="Wind Meter">
+                        <div class="image-units">
+                            <p class="reading wind">km/h</p>
+                            <p class="reading-title">Wind Speed</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img id="visibility-img" src="icon\visibility.webp" alt="Visibility Meter">
+                        <div class="image-units">
+                            <p class="reading visibility"></p>
+                            <p class="reading-title">Visibility</p>
+                        </div>
+                    </div>
+                    <!-- <div class="col">
+                        <img id="aqi-img" src="icon\aqi.webp" alt="AQI Meter">
+                        <div class="image-units">
+                            <p class="reading aqi"></p>
+                            <p class="reading-title">Air Quality</p>
+                        </div>
+                    </div> -->
+                </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
