@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', 'sans-serif';
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 body{
@@ -54,6 +54,9 @@ body{
     cursor: pointer;
 }
 
+.weather{
+    display: none;
+}
 .weather-icon{
     width: 170px;
     margin: 30px 0 20px 0;
@@ -61,7 +64,6 @@ body{
 .weather h1{
     font-size: 3.5rem;
     font-weight: 500;
-    /* margin-bottom: 0.5rem; */
 }
 .weather h2{
     font-size: 2.5rem;
@@ -117,5 +119,10 @@ body{
 .humidity,
 .wind{
     font-size: 28px;
-    font-weight: -6px;
+    font-weight: 600;
+}
+
+.city-not-found-error{
+    display: none;
+    margin-top: 20px;
 }
